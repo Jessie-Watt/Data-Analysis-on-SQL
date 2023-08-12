@@ -6,9 +6,12 @@ In today's world data is widely used by different organizations to take decision
 # **ACTIVITY**
 1. The creation of database names 'Students Record'.
 2. The use creation of three tables in the Students Record Database
-3. The use of operational keywords
+3. The use of operational keywords to show '0' when students have no score
 4. The droping of columns using constraint
 5. The changing of column name from 'subject' to course
 
 # **SKILL DEMONSTRATED**
-The 
+Creating a new database
+The use of operational keys
+Creating tables and inserting values in the rows
+  
