@@ -1,7 +1,9 @@
-# Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL.
-
+# **DATA ANALYSIS USING SQL SERVER AND ITS FUNCTIONS **
+ 
 # **INTRODUCTION**
-In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relatinal database. SQL will be used in this task to create three tables containing student's information, their health records and their performance.
+In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. It will also be used to retrieve, sort and filter datasets of employees.
+
+# **TASK 1 - ANALYSIS ON STUDENTS HEALTH RECORDS AND PERFORMANCE**
 
 # **ACTIVITY**
 1. The creation of database names 'Students Record'.
@@ -21,7 +23,7 @@ The use of operational keys
 Creating tables and inserting values in the rows
 Applying Constraint
 
-# SOLUTIONS
+# SOLUTION 1
 A new database named 'Students Record' was created on the SQL server management by cliking on 'New Query', this activated a work interface where I wrote the code 'CREATE DATABASE STUDENTS_RECORD;' then executed the code, this developed a database accessed on the left-handside of the work interface. 
 
 ![Students Info](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/4c97c102-ab9d-458e-9bf1-f6ed374a741d)
@@ -41,6 +43,47 @@ The health records and the performance tables were also created using the same s
 The column titled 'subject' in the Students_info table was change to 'course' using the this syntax _**EXEC sp_rename'STUDENTS_INFO.SUBJECT', 'COURSE', 'COLUMN';**__ see the screenshot below.
 
 ![image](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/754acb72-71a7-430b-bb1d-8473252aefbf)
+
+
+
+# **TASK 2 - ANALYSIS ON JESSICA'S COMPANY EMPLOYEE DATAILS AND THEIR SALARY SCALE MANAGEMENT DATA
+This
+
+# **ACTIVITY**
+1. Select the employees table and show the data where city is Mumbai and Delhi.
+2. Select the employee table where employee first name have both 'a' and 'e' in them.
+3. Subset the employee table to have employee with date of birth above 1990.
+4. Subset the salary table to show salaries less than one million and sort in an ascending order.
+5. Modify email column of the employee table to contain just email without '@gmail.com '
+
+
+# **SKILL DEMONSTRATED**
+Filtering my dataset using specified conditions
+Retrieving data using operational keywords
+Sorting retrieved values using clauses in specified orders
+
+# TASK 2 SOLUTION
+The Employee and Salary dataset was provided by my coach Victor Somadina, this was imported into my 'Business' SQL server management by right-cliking on database, point to tasks then I click Import Flat File. The two dataset was located in the tables section. A screenshot of the rawdataset can be seen below 
+
+![Employee Raw Dataset](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/d093502a-6031-4f23-8714-5e5442cf5434)
+
+![Salary Raw Dataset](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/08952810-10f7-4cb5-90f0-353d258bb4dd)
+
+In my first activity the employee table will be filtered to show staff who are based in Mumbai and Delhi cities. This was achieved by using the 'WHERE' clause, this filtered the data providing only the rows with Mumbai and Delhi as city. I also introduced the 'Like' operator to evaluate my condition. The syntax used is;   syntax: **SELECT _column1, column2,_ ... FROM _table_name_ WHERE _condition;**. 
+![Mumbai and Delhi Cities](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/0f9c8e4a-d2d3-47d5-8a7f-bcc6829aac3c)
+
+To determine form the employee table where employee first name have both 'a' and 'e' in them. To evaluate this I used the 'WHERE' condition and the percentage(%) operator to return the pattern. **SELECT * FROM EMPLOYEE WHERE NAME LIKE '%[AE]%';**
+
+![Firstname with A and E](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/a2c905db-467a-4349-bfe3-1f35c50b554a)
+
+To retrive the data of employees whose date of birth is above 1990, the 'WHERE' clause and the camparison operators was used; **SELECT * FROM EMPLOYEE WHERE date_of_birth >= '1990';**
+
+![Employee DOB above 1990](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/ecf91146-23dc-4d66-97b3-69e0bd91dd5f)
+
+Subset the salary table to show salaries less than one million and sort in an ascending order. To retrive the data of employees whose salary scale is less than one million, the 'WHERE', 'ORDER BY' and comparison operator were used.
+
+![Employees with salary less than one million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/2d819765-db9b-4fb9-be12-7e30539a706c)
+
 
 # CONCLUSION
 This task has gradually exposed me to the use of SQL and its function. I look to learn more.      
