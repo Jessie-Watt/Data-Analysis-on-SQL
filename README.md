@@ -1,7 +1,7 @@
 # **DATA ANALYSIS USING SQL SERVER AND ITS FUNCTIONS **
  
 # **INTRODUCTION**
-In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. It will also be used to retrieve, sort and filter datasets of employees.
+In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task.
 
 # **TASK 1 - ANALYSIS ON STUDENTS HEALTH RECORDS AND PERFORMANCE**
 
@@ -46,8 +46,9 @@ The column titled 'subject' in the Students_info table was change to 'course' us
 
 
 
+
+
 # **TASK 2 - ANALYSIS ON JESSICA'S COMPANY EMPLOYEE DATAILS AND THEIR SALARY SCALE MANAGEMENT DATA
-This
 
 # **ACTIVITY**
 1. Select the employees table and show the data where city is Mumbai and Delhi.
@@ -86,4 +87,4 @@ Subset the salary table to show salaries less than one million and sort in an as
 
 
 # CONCLUSION
-This task has gradually exposed me to the use of SQL and its function. I look to learn more.      
+These task has exposed me to the use of SQL and its function.     
