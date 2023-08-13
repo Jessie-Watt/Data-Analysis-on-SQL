@@ -1,4 +1,4 @@
-# **DATA ANALYSIS USING SQL SERVER AND ITS FUNCTIONS **
+# **DATA ANALYSIS USING SQL SERVER AND ITS FUNCTIONS**
  
 # **INTRODUCTION**
 In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task.
@@ -7,14 +7,14 @@ In today's world data is widely used by different organizations to take decision
 
 # **ACTIVITY**
 1. The creation of database names 'Students Record'.
-2. The use creation of three tables in the Students Record Database
-     a) Students Information (Student ID, Gender, Name, Age, Subject)
+2. The use creation of three tables in the Students Record Database;
+     a) Students Information (Student ID, Gender, Name, Age, Subject
      b) Health Records (Students ID, Blood Group, Health, Weight)
-     c) Performance(Student ID, Score, Grade)
+     c) Performance (Student ID, Score, Grade)
 4. Making the 'Student ID' column for the three tables to be unique 
 5. Where a student that has no score, it should be '(0)' by default.
 6. Adding a constraint that prevents the Student ID and subject from taking null values.
-7. The droping of columns using constraint
+7. The dropping of columns using constraint
 8. The changing of column name from 'subject' to course
 
 # **SKILL DEMONSTRATED**
@@ -29,7 +29,7 @@ A new database named 'Students Record' was created on the SQL server management 
 ![Students Info](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/4c97c102-ab9d-458e-9bf1-f6ed374a741d)
 
 
-In the students records database, the students_info table was formulated with operational keywords such as 'create', 'table' with the titles of all the column headers inserted in a bracket followed by a semicolon. All column titles were followed by a constraint to help enforce rules to prevent invalid data. This syntax; **CREATE TABLE _table_name(column1 datatype constrainst,...)_** was used to create the students_info table. The constraint 'INT' when an interger is involved, the 'PRIMARY KEY' Constraint is attached when a column is made to be unique, and 'NOT NULL' to prevent a particular column from taking values. The NOT NULL', PRIMARY KEY", and the INT"< constraints were all added to the 'student ID' column and the subject column to enforce thier rules. Values were inserted into the rows of the newly created columns using the 'Insert Into' and 'Values' keywords as seen in the screenshot above. The 'Age' column from students_info table was dropped by the use of syntax; **ALTER TABLE __table_name_ _DROP COLUMN __column_name_;**. This can be viewed on the screenshot below
+In the students records database, the students_info table was formulated with operational keywords such as 'create', 'table' with the titles of all the column headers inserted in a bracket followed by a semicolon. All column titles were followed by a constraint to help enforce rules to prevent invalid data. This syntax; **CREATE TABLE _table_name(column1 datatype constrainst,...)_** was used to create the students_info table. The constraint 'INT' when an interger is involved, the 'PRIMARY KEY' Constraint is attached when a column is made to be unique, and 'NOT NULL' to prevent a particular column from taking values. The NOT NULL', PRIMARY KEY", and the INT"< constraints were all added to the 'student ID' column and the subject column to enforce thier rules. Values were inserted into the rows of the newly created columns using the 'Insert Into' and 'Values' keywords as seen in the screenshot above. The 'Age' column from students_info table was dropped by the use of syntax; **ALTER TABLE __table_name_ _DROP COLUMN __column_name_;**. This can be viewed on the screenshot below 
 
 
 ![STUDENT INFO 2](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/9bb5c574-91cf-49a9-a5e6-494a74165ef8)
@@ -84,6 +84,7 @@ To retrive the data of employees whose date of birth is above 1990, the 'WHERE' 
 Subset the salary table to show salaries less than one million and sort in an ascending order. To retrive the data of employees whose salary scale is less than one million, the 'WHERE', 'ORDER BY' and comparison operator were used.
 
 ![Employees with salary less than one million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/2d819765-db9b-4fb9-be12-7e30539a706c)
+
 
 
 # CONCLUSION
