@@ -1,4 +1,6 @@
 # **DATA ANALYSIS USING SQL SERVER AND ITS FUNCTIONS**
+
+
  
 # **INTRODUCTION**
 In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task.
@@ -18,10 +20,11 @@ In today's world data is widely used by different organizations to take decision
 8. The changing of column name from 'subject' to 'course'
 
 # **SKILL DEMONSTRATED**
-Creating a new database
-The use of operational keywords
-Creating tables and inserting values in the rows
-Applying Constraint
+
+1). Creating a new database 
+2). The use of operational keywords 
+3). Creating tables and inserting values in the rows 
+4). Applying Constraint
 
 # SOLUTION 1
 A new database named 'Students Record' was created on the SQL server management by cliking on 'New Query', this activated a work interface where I wrote the code 'CREATE DATABASE STUDENTS_RECORD;' then executed the code, this developed a database accessed on the left-handside of the work interface. 
@@ -58,10 +61,10 @@ The column titled 'subject' in the Students_info table was change to 'course' us
 5. Modify email column of the employee table to contain just email without '@gmail.com '
 
 
-# **SKILL DEMONSTRATED**
-Filtering my dataset using specified conditions
-Retrieving data using operational keywords
-Sorting retrieved values using clauses in specified orders
+# **SKILLS DEMONSTRATED**
+1). Filtering my dataset using specified conditions
+2). Retrieving data using operational keywords
+3). Sorting retrieved values using clauses in specified orders
 
 # TASK 2 SOLUTION
 The Employee and Salary dataset was provided by my coach Victor Somadina, this was imported into my 'Business' SQL server management by right-cliking on database, point to tasks then I click Import Flat File. The two dataset was located in the tables section. A screenshot of the rawdataset can be seen below 
@@ -71,6 +74,7 @@ The Employee and Salary dataset was provided by my coach Victor Somadina, this w
 ![Salary Raw Dataset](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/08952810-10f7-4cb5-90f0-353d258bb4dd)
 
 In my first activity the employee table will be filtered to show staff who are based in Mumbai and Delhi cities. This was achieved by using the 'WHERE' clause, this filtered the data providing only the rows with Mumbai and Delhi as city. I also introduced the 'Like' operator to evaluate my condition. The syntax used is;   syntax: **SELECT _column1, column2,_ ... FROM _table_name_ WHERE _condition;**. 
+
 ![Mumbai and Delhi Cities](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/0f9c8e4a-d2d3-47d5-8a7f-bcc6829aac3c)
 
 To determine form the employee table where employee first name have both 'a' and 'e' in them. To evaluate this I used the 'WHERE' condition and the percentage(%) operator to return the pattern. **SELECT * FROM EMPLOYEE WHERE NAME LIKE '%[AE]%';**
@@ -83,7 +87,7 @@ To retrive the data of employees whose date of birth is above 1990, the 'WHERE' 
 
 Subset the salary table to show salaries less than one million and sort in an ascending order. To retrive the data of employees whose salary scale is less than one million, the 'WHERE', 'ORDER BY' and comparison operator were used.
 
-![Employees with salary less than one million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/2d819765-db9b-4fb9-be12-7e30539a706c)
+![EMP  less than 1million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/b743f2c9-3cdc-4fae-9f7f-9643dbd0b213)
 
 
 
