@@ -3,7 +3,7 @@
 
  
 # **INTRODUCTION**
-In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task, the last task will require the use of aggregate functions to perform calculations on sets of rows and return results.
+In today's world data is widely used by different organizations to make decisions to aid improvemnt in work efficiency, research and to solve many problems and even to forecast future outcome. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in this task, aggregate functions will be used to also perform calculations on sets of rows of data to return results.
 
 # **TASK 1 - ANALYSIS ON STUDENTS HEALTH RECORDS AND PERFORMANCE**
 
@@ -27,7 +27,7 @@ In today's world data is widely used by different organizations to take decision
 4). Applying Constraint
 
 # SOLUTION 1
-A new database named 'Students Record' was created on the SQL server management by cliking on 'New Query', this activated a work interface where I wrote the code 'CREATE DATABASE STUDENTS_RECORD;' then executed the code, this developed a database accessed on the left-handside of the work interface. 
+A new database named 'Students Record' was created on the SQL server management by cliking on 'New Query', this activated a work interface where I wrote the code 'CREATE DATABASE STUDENTS_RECORD;' then I clicked 'Execute' to executed the code, this developed a database accessed on the left-handside of the work interface. 
 
 ![Students Info](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/4c97c102-ab9d-458e-9bf1-f6ed374a741d)
 
@@ -37,16 +37,17 @@ In the students records database, the 'students_info' table was formulated with 
 
 ![STUDENT INFO 2](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/9bb5c574-91cf-49a9-a5e6-494a74165ef8)
 
-The health records and the performance tables were also created using the same syntax; **CREATE TABLE _table_name(column1 datatype constrainst,...)_**. The Students ID column was unique for both tables. Each column title of the health record table was given its specific constraint as;_ _ **CREATE TABLE_ _HEALTH_RECORDS (STUDENT_ID INT PRIMARY KEY NOT NULL, BLOOD_GROUP VARCHAR(10), WEIGHT INT);_**. Values were inserted into the rows of the column as seen from the screenshot below, then_**SELECT * FROM HEALTH_RECORDS;_** was highlighted and the 'execute' button was clicked.
+The health records and the performance tables were also created using the same syntax; **CREATE TABLE _table_name(column1 datatype constrainst,...)_**. The Students ID column was unique for both tables. Each column title of the health record table was given its specific constraint as;_ _ **CREATE TABLE_ _HEALTH_RECORDS (STUDENT_ID INT PRIMARY KEY NOT NULL, BLOOD_GROUP VARCHAR(10), WEIGHT INT);_**. Values were inserted into the rows of the column as seen from the screenshot below, then_**SELECT * FROM HEALTH_RECORDS;_** was highlighted and the 'execute' button was clicked. This developed the health record table showing the student ID, their different Blood groups and their weight in KG. The second screenshot below shows the performance table of students in which some rows had no values were inserted. The constraint 'default' was attached to 'score', specifying '0' to any row without value, hence this means those students failed. Please see the screenshot below.
 
 ![image](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/bef1990f-20ef-462b-bdcd-8e0a74abff8e)
 
-![image](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/0f19b192-5d51-411a-9838-ed58d4d08d90)
+![Performance](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/62e62d17-0b04-4db4-be90-9d4877ca71a7)
+
+
  
 The column titled 'subject' in the Students_info table was change to 'course' using the this syntax _**EXEC sp_rename'STUDENTS_INFO.SUBJECT', 'COURSE', 'COLUMN';**__ see the screenshot below.
 
 ![image](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/754acb72-71a7-430b-bb1d-8473252aefbf)
-
 
 
 
@@ -67,13 +68,13 @@ The column titled 'subject' in the Students_info table was change to 'course' us
 3). Sorting retrieved values using clauses in specified orders
 
 # TASK 2 SOLUTION
-The Employee and Salary dataset was provided by my coach Victor Somadina, this was imported into my 'Business' SQL server management by right-cliking on database, point to tasks then I click Import Flat File. The two dataset was located in the tables section. A screenshot of the rawdataset can be seen below 
+The Employee and Salary dataset was provided by my coach Victor Somadina, this was imported into my 'Business Database' created on my SQL server management. I right-clicked on my newly created 'business database' then clicled 'task' followed by Import Flat File, this automatically generated the Employee and the salary table. The two dataset was located in the tables section. A screenshot of the raw dataset can be seen below 
 
 ![Employee Raw Dataset](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/d093502a-6031-4f23-8714-5e5442cf5434)
 
 ![Salary Raw Dataset](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/08952810-10f7-4cb5-90f0-353d258bb4dd)
 
-In my first activity the employee table will be filtered to show staff who are based in Mumbai and Delhi cities. This was achieved by using the 'WHERE' clause, this filtered the data providing only the rows with Mumbai and Delhi as city. I also introduced the 'Like' operator to evaluate my condition. The syntax used is;   syntax: **SELECT _column1, column2,_ ... FROM _table_name_ WHERE _condition;**. 
+In my first activity the employee table will be filtered to show staff who are based in Mumbai and Delhi cities. This was achieved by using the 'WHERE' clause, this filtered the data providing only the rows with Mumbai and Delhi as city. I also introduced the 'Like' operator to evaluate my condition. The syntax used was; **SELECT _column1, column2,_ ... FROM _table_name_ WHERE _condition;**. 
 
 ![Mumbai and Delhi Cities](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/0f9c8e4a-d2d3-47d5-8a7f-bcc6829aac3c)
 
@@ -81,11 +82,11 @@ To determine form the employee table where employee first name have both 'a' and
 
 ![Firstname with A and E](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/a2c905db-467a-4349-bfe3-1f35c50b554a)
 
-To retrive the data of employees whose date of birth is above 1990, the 'WHERE' clause and the camparison operators was used; **SELECT * FROM EMPLOYEE WHERE date_of_birth >= '1990';**
+To retrieve the data of employees whose date of birth is above 1990, the 'WHERE' clause and the camparison operators was used. The greater than or equal to opertaor was used to condition the date of birth column to provide years above 1990. See syntax: **SELECT * FROM EMPLOYEE WHERE date_of_birth >= '1990';**
 
 ![Employee DOB above 1990](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/ecf91146-23dc-4d66-97b3-69e0bd91dd5f)
 
-Subset the salary table to show salaries less than one million and sort in an ascending order. To retrive the data of employees whose salary scale is less than one million, the 'WHERE', 'ORDER BY' and comparison operator were used.
+Subset the salary table to show salaries less than one million and sort in an ascending order. To retrive the data of employees whose salary scale is less than one million, the 'WHERE', 'ORDER BY' and comparison operator were used. 
 
 ![EMP  less than 1million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/b743f2c9-3cdc-4fae-9f7f-9643dbd0b213)
 
@@ -103,16 +104,19 @@ Subset the salary table to show salaries less than one million and sort in an as
 
 # **TASK 3 SOLUTION**
 
-The total number of employees, in the employee table was calulated using the 'count' function. The syntax applied is     **_ SELECT COUNT(*) FROM _table_name__**. The result can be seen in the screenshot below.
+The total number of employees, in the employee table was calulated using the 'count' function. The syntax applied is: **_ SELECT COUNT(*) FROM _table_name__**. The result can be seen in the screenshot below.
 
 ![Total Employee](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/05f9ec6f-dec7-4163-980c-cbf2486dd857)
 
 
-The top five(5) cities with highest number of employees. The 'TOP N' clause is used to limit the number of rows that apppear in a query. the syntax used was  syntax: **SELECT TOP N _column1, column2_, ... FROM _table_name_**. The aggregate functio 'count' was used to count the cities and filter a new colmun renmaining it as 'Total Employee', which was later 'grouped by' 'city' to return the result in 'city' and 'total employee' columns. The 'total employee' column was 'order by' to be in a descending order. The 'having' clause was used to filter the result of a 'group by' clause 
+The top five(5) cities with highest number of employees. The 'TOP N' clause is used to limit the number of rows that apppear in a query. the syntax used was  syntax: **SELECT TOP N _column1, column2_, ... FROM _table_name_**. The aggregate function 'count' was used to count the cities  with most employees, renaming the newly created column as 'Total Employee', which was later 'grouped by' the each city' to return the result in 'city' and 'total employee' columns. The 'total employee' column was 'order by' to be in a descending order. The 'having' clause was used to filter the result of a 'group by' clause to produces cities with employees greater than 15.
 
 ![The top 5 cities](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/4486913a-3ef4-4fc8-8d9b-0360f3c21e3c)
 
-The most used pincode by employees.
+The most used pincode by employees was deduced using the count function, this counted the total number of times all pincodes were used amongst the employees, this was organized to be represented in a new column named 'Most used Pincode'. The pincodes used were grouped showing the number of times each pincode was used. The most used pincode was found to be Pincode: 410210. The screenshot can be seen below. 
+
+![Most used pincode](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/af0c1b58-7840-4627-a074-20afed958d7b)
+
 
 # CONCLUSION
-These task has exposed me to the use of SQL and its function.     
+This task exposed and enlighted my understanding in the use of SQL keywords, its operators, clauses and constraints to filter, sort and retrieve required data through dedicated thinking to resolve problems.    
