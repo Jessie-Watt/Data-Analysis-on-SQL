@@ -3,7 +3,7 @@
 
  
 # **INTRODUCTION**
-In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task.
+In today's world data is widely used by different organizations to take decisions to aid improvemnt in work efficiency, research and many others facets. Structured Query Language(SQL) is a standardized programming language used to manage relational database. On my first task SQL will be used to create three tables containing student's information, their health records and their performance. SQL advanced operators and clauses will also be used to retrieve, sort and filter datasets of employees in the second task, the last task will require the use of aggregate functions to perform calculations on sets of rows and return results.
 
 # **TASK 1 - ANALYSIS ON STUDENTS HEALTH RECORDS AND PERFORMANCE**
 
@@ -51,7 +51,7 @@ The column titled 'subject' in the Students_info table was change to 'course' us
 
 
 
-# **TASK 2 - ANALYSIS ON JESSICA'S COMPANY EMPLOYEE DATAILS AND THEIR SALARY SCALE MANAGEMENT DATA
+# **TASK 2 - ANALYSIS ON JESSICA'S COMPANY EMPLOYEE DETAILS AND THEIR SALARY SCALE MANAGEMENT DATA
 
 # **ACTIVITY**
 1. Select the employees table and show the data where city is Mumbai and Delhi.
@@ -89,7 +89,30 @@ Subset the salary table to show salaries less than one million and sort in an as
 
 ![EMP  less than 1million](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/b743f2c9-3cdc-4fae-9f7f-9643dbd0b213)
 
+# **TASK 3 - CONTINUATION OF TASK 2**
 
+# **ACTIVITY**
+1. What is the total number of employees in our employee table.
+2. To find out the top 5 cities with the highest number of employees, the filter the result to show cities with more    
+    than 15 employess.
+3. To find out the most used pin code by the employee. In this case, we want toknow the pin codes that is used the most
+
+
+# **SKILLS DEMONSTRATED**
+1). The use of Aggregate functions
+
+# **TASK 3 SOLUTION**
+
+The total number of employees, in the employee table was calulated using the 'count' function. The syntax applied is     **_ SELECT COUNT(*) FROM _table_name__**. The result can be seen in the screenshot below.
+
+![Total Employee](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/05f9ec6f-dec7-4163-980c-cbf2486dd857)
+
+
+The top five(5) cities with highest number of employees. The 'TOP N' clause is used to limit the number of rows that apppear in a query. the syntax used was  syntax: **SELECT TOP N _column1, column2_, ... FROM _table_name_**. The aggregate functio 'count' was used to count the cities and filter a new colmun renmaining it as 'Total Employee', which was later 'grouped by' 'city' to return the result in 'city' and 'total employee' columns. The 'total employee' column was 'order by' to be in a descending order. The 'having' clause was used to filter the result of a 'group by' clause 
+
+![The top 5 cities](https://github.com/Jessie-Watt/Data-analysis-of-student-s-information-health-record-and-their-performance-using-SQL./assets/140435577/4486913a-3ef4-4fc8-8d9b-0360f3c21e3c)
+
+The most used pincode by employees.
 
 # CONCLUSION
 These task has exposed me to the use of SQL and its function.     
